@@ -139,16 +139,16 @@ button:active {
   column-gap: 30px;
   background-color: hsl(0, 0%, 100%);
 }
-.comment__score {
+.comment__score-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: hsl(228, 33%, 97%);
   font-weight: bold;
   border-radius: 10px;
-  height: 120px;
+  height: 140px;
 }
-.comment__score button {
+.comment__score-block button {
   background: none;
   font-size: 30px;
 }

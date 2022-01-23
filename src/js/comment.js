@@ -1,9 +1,9 @@
 export default function comment(commentAuthor, currentUser) {
   return `
-    <div class="comment__score">
-      <button>+</button>
-      <span>${commentAuthor.score}</span>
-      <button>-</button>
+    <div class="comment__score-block">
+      <button class="score-btn-plus">+</button>
+      <span class="comment-score">${commentAuthor.score}</span>
+      <button class="score-btn-minus">-</button>
     </div>
     <div class="comment__content">
       <div class="comment__header">

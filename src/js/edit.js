@@ -1,7 +1,7 @@
 export default function edit(target, commentsData) {
   const editComment = target.closest('.comment');
   const editCommentId = +editComment.getAttribute('comment-id');
-  console.log(editCommentId);
+
   const commentText = editComment.querySelector('.comment__text');
   const updateBtn = document.createElement('button'); // create update button
   const editTextArea = document.createElement('textarea'); // create edit text area, which replace text comment

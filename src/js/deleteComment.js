@@ -43,5 +43,3 @@ export default function deleteComment(target, commentsData) {
     }
   });
 }
-
-//comment.id !== +removeComment.getAttribute('comment-id')

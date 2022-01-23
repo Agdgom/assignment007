@@ -5,7 +5,7 @@ import addComment from './addComment.js';
 import deleteComment from './deleteComment.js';
 import reply from './reply.js';
 import edit from './edit.js';
-
+import score from './score.js';
 let currentUser = JSON.parse(localStorage.getItem('currentUser')) || data.currentUser;
 let commentsData = JSON.parse(localStorage.getItem('comments')) || data.comments;
 
@@ -28,5 +28,8 @@ document.body.addEventListener('click', (e) => {
   }
   if (target.classList.contains('edit-btn')) {
     edit(target, commentsData);
+  }
+  if (target.classList.contains('score-btn-plus') || target.classList.contains('score-btn-minus')) {
+    score(target, commentsData);
   }
 });

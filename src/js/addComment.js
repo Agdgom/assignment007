@@ -9,10 +9,10 @@ function addComment(currentUser, getRandomInRange, commentsArray) {
   const commentId = getRandomInRange(1, 1000000);
   newCommentMain.setAttribute('comment-id', commentId);
   newCommentMain.innerHTML = `
-    <div class="comment__score">
-      <button>+</button>
-      <span>0</span>
-      <button>-</button>
+    <div class="comment__score-block">
+      <button  class="score-btn-plus">+</button>
+      <span class="comment-score">0</span>
+      <button class="score-btn-minus">-</button>
     </div>
     <div class="comment__content">
       <div class="comment__header">
