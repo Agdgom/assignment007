@@ -26,10 +26,10 @@ export default function reply(currentUser, target, getRandomInRange, commentsDat
     const contentValue = replyComment.querySelector('.comment__content').value;
     replyComment.setAttribute('comment-id', replyCommentId);
     replyComment.innerHTML = `
-        <div class="comment__score">
-        <button>+</button>
-        <span>0</span>
-        <button>-</button>
+        <div class="comment__score-block">
+        <button class="score-btn-plus">+</button>
+        <span class="comment-score">0</span>
+        <button class="score-btn-minus">-</button>
       </div>
       <div class="comment__content">
           <div class="comment__header">
