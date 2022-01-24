@@ -4,7 +4,7 @@ export default function deleteComment(target, commentsData) {
 
   const modal = document.createElement('div');
   modal.innerHTML = `
-        <h2></h2>
+        <h2>Delete Comment</h2>
         <p>
           Are you sure to want to delete this comment? 
           This will remove the comment and can't be undone.
